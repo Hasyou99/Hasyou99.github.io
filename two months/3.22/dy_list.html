@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!--
+    html文档的加载顺序概念：
+    从上倒下加载
+       如果我在head中引入js文件直接读取document。body，返回值为null
+    通过src属性引入js文件，相当于把js文件中的代码复制在指定位置
+    在写代码的时候建议把js文件放在body节点的最后面
+-->
+    <script> 
+        console.log(document.body)
+    </script>
+</head>
+<body>
+    
+    <!--<div class="editor">
+        <input type="text" name="" value="" id="txt">
+        <button type="button" onclick="btnClick()">确定</button>
+    </div>
+    <div class="container">
+
+    </div>-->
+
+    <script src="js/dy_list1.js"> </script>
+</body>
+</html>

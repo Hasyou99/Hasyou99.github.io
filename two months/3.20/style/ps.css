@@ -1,0 +1,76 @@
+body,html,ul,li{
+    /*height: 100%;*/
+    margin: 0px;
+    padding: 0px;
+}
+/*头部*/
+.top{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background-color: #515151;
+}
+.middle{
+    width: 100%;
+    height: 154px;
+    background-color: #fff;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: #39f;
+}
+/*top*/
+.top-con,.middle-con,.nav-con{
+    width: 980px;
+    margin: 0px auto;
+    overflow: hidden;
+    font-family: "微软雅黑";
+}
+.top-con,a{
+    font-size: 12px;
+    color: white;
+}
+.top-con .wel{
+    float: left;
+}
+.top-con .lang{
+    float: right;
+}
+.lang a{
+    text-decoration: none;
+}
+.lang a span{
+    padding-left: 5px;
+}
+
+/*middle*/
+
+.logo{
+    float: left;
+    padding: 33px 0px;
+}
+.tel{
+    height: 100%;
+    float: right;
+    padding: 54px 0px;
+}
+/*nav*/
+.nav-con ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+    /*margin-left: 5px;*/
+}
+ul li a{
+    padding: 10.5px 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+}
+ul li:hover{
+    background-image:url(../images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
