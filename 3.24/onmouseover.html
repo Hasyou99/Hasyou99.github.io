@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="author">
+        <title></title>
+        <style>
+            .container{
+                width: 200px;
+                height: 200px;
+                background-color: #00f;
+                margin: 10px;
+                cursor: pointer;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="container first" style="position: absolute"
+        onmouseout="outHandle(event,this)"    
+        onmouseover="overHandle(event,this)"
+        onmousedown="downHandle(event,this)"
+        onmousemove="moveHandle(event,this)"
+        onmouseup="upHandle(event,this)"
+        ></div>
+
+        <script src="js/mouseover.js"></script>
+    </body>
+</html>

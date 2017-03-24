@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="" href="css/event.css">
+
+</head>
+<body>
+    <!--
+        onclick为标签添加一个事件，因好重的属性值可理解为js代码
+        *  enent是js的内置对象，可以在事件传递中调用
+        *  this是属于js的内置对象，可以在事件传递的时候调用
+        *  在js中 如果方法需要接受多个参数，在调用时传递单个参数或无参数也是可以的
+    -->
+    <div class="container first" onclick="clickHandle('first',0)"></div>
+    <div class="container second" onclick="clickHandle(123,1)"></div>
+    <div class="container third" onclick="clickHandle(event,2)"></div>
+    <div class="container forth" onclick="clickHandle(this,3)"></div>
+    <div class="container fifth"></div>
+
+    <script src="js/event.js"> </script>
+</body>
+</html>
