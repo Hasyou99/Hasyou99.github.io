@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>苗苗专属</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/one.css" />
+    <link rel="stylesheet" href="css/two-page.css" />
+    <link rel="stylesheet" href="css/three.css">
+    <style>
+        .container{
+            width: 800px;
+            margin:  30px auto;
+            font-size: 16px;
+        }
+        body{
+             position: relative;
+        }
+        #section3 .container h3{
+            margin-top: 40px;
+        }
+        .lyric{
+            width: 600px;
+            margin: 40px auto;
+            margin-top: 30px; 
+        }
+        .one,.two,.three,.four,.five{
+            width: 200px;
+            border: 1px dashed palevioletred;
+            padding: 5px 0;
+        }
+        .one{
+            position: absolute;
+            left: 2%;
+            top: 50%;
+        }
+        .two{
+            position: absolute;
+            top: 25%;
+            left:20%;
+        }
+        .three{
+            position: absolute;
+            top: 50%;
+            left: 40%;
+        }
+        .four{
+            position: absolute;
+            left: 60%;
+            top:25%;
+        }
+        .five{
+            position: absolute;
+            left: 80%;
+            top: 50%;
+        }
+        h2{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" data-PageSwitch>
+        <div class="sections">
+            <div class="section" id="section0">
+                <!--<h3>This is the Page</h3>-->
+                <div id="wrap" class="wrap">
+                    <div class="photo" id="photo_{{index}}" onclick="turn(this)">
+                        <div class="photo_wrap">
+                            <div class="side side_front">
+                                <div class="image">
+                                    <img src="images/{{img}}" alt="{{alt}}" />
+                                </div>
+                                <div class="capation">{{caption}}
+                                </div>
+                            </div>
+                            <div class="side side_back">
+                                <div class="desc">
+                                    {{desc}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <!--<h3>This is the Page</h3>-->
+                <div id="bg_music_btn" num='1' style="color:black;background-color:tomato;
+                height: 100px;width: 50px;position:relative;top:50px; line-height:30px;
+                font-size:20px">关闭背景音乐</div>
+
+                <!--背景音乐-->
+
+                <div id="bg_music"></div>
+
+                <div class="slider">
+                    <ul>
+                        <li data-index="1">
+                            <a href="#bg1">Hipster Fashion Haircut</a>
+                        </li>
+                        <li data-index="2">
+                            <a href="#bg2">Cloud Computing Services &amp; Consulting</a>
+                        </li>
+                        <li data-index="3">
+                            <a href="#bg3">My haire is sooo fantastic!</a>
+                        </li>
+                        <li data-index="4">
+                            <a href="#bg4">Eat healthy &amp; excersice!</a>
+                        </li>
+                        <li data-index="5">
+                            <a href="#bg5">Lips so kissable I could die ...</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div class="section" id="section3">
+                <div class="container">
+                    <h3>写给你的歌</h3>
+                    <div class="lyric">
+                        <div class="one">
+                            <h2>一</h2>
+                            <p>
+                                遇见你，是我最大的幸运<br>
+                                和你的在一起的时光快乐的<br>
+                                你让我不止一次的想过<br>
+                                我们以后会是什么样的结果<br>
+                                那年的冬天洛阳的街头<br>
+                                多少情感迸发在离别后<br>
+                            </p>
+                        </div>
+                        <div class="two">
+                             <h2>二</h2>
+                            <p>
+                                就算我们偶尔还会联络<br>
+                                可那并不能抚慰我的脆弱<br>
+                                也不能让我不再难过<br>
+                                此刻漫天风沙呼啸而过<br>
+                                一不小心就模糊了眼眸<br>
+                                谁说泪水不是一种解脱<br>
+                                至少能平复心头的烈火<br>
+                            </p>
+                        </div>
+                        <div class="three">
+                             <h2>三</h2>
+                            <p>                                                 
+                                我不会去猜想你的生活<br>
+                                关于爱情我从未奢望过<br>
+                                你有你的选择我有我的执着<br>
+                                我们都抗拒着青春腐朽<br>
+                            </p>
+                        </div>
+                        <div class="four">
+                             <h2>四</h2>
+                            <p>
+                                还记得初次见你的时候<br>
+                                你俏丽的容颜无需粉墨<br>
+                                可有些事终究无法挽留<br>
+                                有些现实我们也不能左右<br>
+                                对你的爱我会埋藏心中<br>
+                                你的开心，就是我的幸福<br>
+                            </p>
+                        </div>
+                        <div class="five">
+                             <h2>五</h2>
+                            <p>
+                                未来还有很长很长的路<br>
+                                祝愿你能真正活的快乐<br>
+                                我也会一如既往的行走<br>
+                                在每个春分秋后日出日落<br>
+                                如果某天你忽然想起我<br>
+                                如果那一刻你面带笑容<br>
+                                如果再次邂逅在某个街头<br>
+                                如果我们还能牵着手<br>
+                                遇见，那该是多大的幸运<br> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/page.js"></script>
+<script src="js/myData.js"></script>
+<script src="js/two-page.js"></script>
+<script src="js/one.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#bg_music').append('<audio id="m_bg_music" loop="loop" preload="auto" autoplay="autoplay" src="music/0205.mp3" />');
+        var mp3 = $('#m_bg_music')[0];
+
+        $('#bg_music_btn').click(function() {
+            var num = $('#bg_music_btn').attr('num');
+            if (num == "1") {
+                $('#bg_music_btn').attr('num', '0');
+                mp3.pause();
+            }
+            if (num == "0") {
+                $('#bg_music_btn').attr('num', '1');
+                mp3.play();
+            }
+        });
+    });
+</script>
+
+</html>
